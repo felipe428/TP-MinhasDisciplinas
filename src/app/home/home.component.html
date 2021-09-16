@@ -6,3 +6,21 @@
   Github:
   <a href="https://github.com/felipe428">github.com/felipe428</a>
 </h2>
+
+<br />
+
+<table>
+  <tr>
+    <th *ngFor="let disciplina of this.disciplinas.getList(); index as i">
+      {{ disciplina.diaSemana }}
+    </th>
+  </tr>
+  <tr>
+    <td *ngFor="let disciplina of this.disciplinas.getList(); index as i">
+      {{ disciplina.horario }}h
+    </td>
+    <td *ngFor="let disciplina of this.disciplinas.getList(); index as i">
+      {{ disciplina.nome }}
+    </td>
+  </tr>
+</table>
